@@ -119,6 +119,7 @@ public class HomeWorkLesson22 {
     }
 
     private static double randomDoubleNumber(int range) {
+
         return round(Math.random() * range);
     }
 
