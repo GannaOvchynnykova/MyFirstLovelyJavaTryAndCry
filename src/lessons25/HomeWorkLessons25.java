@@ -32,7 +32,7 @@ public class HomeWorkLessons25 {
 
     private static void doNotUseForTwo(int a, int b) {
         do {
-            System.out.println(a);;
+            System.out.println(a);
             a++;
         } while (a < b);
     }
@@ -42,10 +42,18 @@ public class HomeWorkLessons25 {
             System.out.println(a);
             b--;
         } while (b > 0);
+
+        // int count = 0;
+        //while (count < b){
+        //count ++;
+        //System.out.print(a + " , " + count);
+        //System.out.println();
     }
 
-    private static String myFirstCompareTo(String city, String city2) {
-        return (city.charAt(0) < city2.charAt(0) || city.charAt(1) < city2.charAt(1)) ? city : city2;
+
+    private static String myFirstCompareTo(String word1, String word2) {
+        return (word1.charAt(0) < word2.charAt(0) || word1.charAt(1) < word2.charAt(1)) ? word1 : word2;
+        //return (word1.compareToIgnoreCase(word2) < 0) ? word1 : word2;
     }
 
     private static int getMeMin(int a, int b) {
@@ -54,5 +62,12 @@ public class HomeWorkLessons25 {
 
     private static int getMeMax(int a, int b) {
         return (a > b) ? a : b;
+
+        //if (a > b)
+        //return a;
+        //else
+        //return b;
+
+        //return Math.max(a , b);
     }
 }

@@ -7,18 +7,17 @@ public class BMI_Calculator {
         Scanner input = new Scanner (System.in);
         double weight;
         System.out.println("Enter your body weight in kg: ");
-        weight = input.nextInt();
+        weight = input.nextDouble();
         double height;
         System.out.println("Enter your height in m: ");
-        height = input.nextInt();
+        height = input.nextDouble();
         System.out.println("Your body mass index: ");
         bodyMassIndex(weight, height);
     }
 
     private static void bodyMassIndex(double weight, double height) {
-        double BMI = (weight / (height * height)) * 1000000;
-        BMI = (int) BMI;
-        BMI = BMI / 100;
+        double BMI = (weight / (height * height));
+        //BMI = (int) BMI;
         System.out.println("≈ " + BMI + " kg/m²");
         if (BMI <= 16){
             System.out.println("Severe underweight");
