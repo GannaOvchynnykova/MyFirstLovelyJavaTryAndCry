@@ -45,11 +45,7 @@ public class HomeWorkLessons25 {
     }
 
     private static String myFirstCompareTo(String city, String city2) {
-        if (city.charAt(0) < city2.charAt(0) || city.charAt(1) < city2.charAt(1)) {
-            return city;
-        } else {
-            return city2;
-        }
+        return (city.charAt(0) < city2.charAt(0) || city.charAt(1) < city2.charAt(1)) ? city : city2;
     }
 
     private static int getMeMin(int a, int b) {

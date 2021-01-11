@@ -36,7 +36,7 @@ public class BMI_Calculator {
             System.out.println("Obesity");
         }
         if (BMI > 35 && BMI <= 40){
-            System.out.println("Ожирение резкое");
+            System.out.println("Obesity is sharp");
         }
         if (BMI > 40) {
             System.out.println("Very severe obesity");
