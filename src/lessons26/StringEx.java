@@ -23,7 +23,7 @@ public class StringEx {
     }
 
     private static boolean bobThere(String str) {
-        for (int i = 0; i < str.length(); i++) {
+        for (int i = 0; i < str.length()-2; i++) {
             if (str.charAt(i) == 'b' && str.charAt(i + 2) == 'b') {
                 return true;
             }
@@ -33,7 +33,7 @@ public class StringEx {
 
     private static int countCode(String str) {
         int count = 0;
-        for (int i = 0; i < str.length(); i++) {
+        for (int i = 0; i < str.length()-3; i++) {
             if (str.charAt(i) == 'c' && str.charAt(i + 1) == 'o' && str.charAt(i + 3) == 'e') {
                 count++;
             }

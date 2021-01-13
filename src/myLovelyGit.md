@@ -7,4 +7,4 @@ git add src/lessons24/Hw.Java
 4. nado sakomitet
 "git commit -m "Git introduction and homework23"
 5. nado otpravit 
-git push origin main 
+git push origin main ""
