@@ -12,13 +12,18 @@ public class HomeWorkLessons29 {
     }
 
     private static boolean checkPalindrom(String str) {
+        String output = spaceNotSpace(str);
+        String temp = reverse(str);
+        return output.equals(temp);
+    }
+
+    private static String spaceNotSpace(String str) {
         String output = "";
         for (int i = 0; i < str.length(); i++) {
             if (str.charAt(i) != ' ')
                 output += str.toLowerCase().charAt(i);
         }
-        String temp = reverse(str);
-        return output.equals(temp);
+        return output.toLowerCase();
     }
 
     private static String reverse(String input) {
