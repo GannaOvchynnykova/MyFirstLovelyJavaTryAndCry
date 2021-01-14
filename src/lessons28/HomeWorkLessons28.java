@@ -16,7 +16,7 @@ public class HomeWorkLessons28 {
         System.out.println("Our array " + Arrays.toString(array));
     }
 
-    private static int[] makePI (int size) {
+    private static int[] makePI(int size) {
         int[] output = new int[size];
         output[0] = (int) (Math.PI);
         output[1] = (int) (((Math.PI * 100)) / 10) % 10;
@@ -25,13 +25,8 @@ public class HomeWorkLessons28 {
     }
 
     private static boolean endOther(String word, String end) {
-        if (word.toLowerCase().endsWith(end.toLowerCase())) {
-            return true;
-        }
-        if (end.toLowerCase().endsWith(word.toLowerCase())) {
-            return true;
-        }
-        return false;
+        return (word.toLowerCase().endsWith(end.toLowerCase())
+                || (end.toLowerCase().endsWith(word.toLowerCase())));
     }
 
     private static int roundSum(int a, int b, int c) {
@@ -39,12 +34,12 @@ public class HomeWorkLessons28 {
     }
 
     private static int round10(int num) {
-        int temp = num / 10;
-        if ((num % 10) >= 5) {
-            temp *= 10;
-            return temp + 10;
+        int temp = num % 10;
+        if (temp < 5) {
+            num = num - temp;
+        } else {
+            num = num - temp + 10;
         }
-        return temp * 10;
+        return num;
     }
-
 }
