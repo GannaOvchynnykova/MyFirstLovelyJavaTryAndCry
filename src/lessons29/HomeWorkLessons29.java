@@ -6,12 +6,12 @@ public class HomeWorkLessons29 {
         //Учесть, что палиндром может быть предложением с пробелами.
         //При решении задачи используйте цикл.
         //Нельзя использовать методы replace(), reverse() и конструкции, которые вы не учили.
-        System.out.println(checkPalindrom("А роза упала на лапу Азора"));// -> true
-        System.out.println(checkPalindrom("поп"));// -> true
-        System.out.println(checkPalindrom("школа"));// -> false
+        System.out.println(checkPalindrome("А роза упала на лапу Азора"));// -> true
+        System.out.println(checkPalindrome("поп"));// -> true
+        System.out.println(checkPalindrome("школа"));// -> false
     }
 
-    private static boolean checkPalindrom(String str) {
+    private static boolean checkPalindrome(String str) {
         String output = spaceNotSpace(str);
         String temp = reverse(str);
         return output.equals(temp);
