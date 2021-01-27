@@ -1,8 +1,6 @@
 package lessons30;
 
 public class HomeWorkDoubleArray {
-    public static final String ANSI_WHITE = "\u001B[37m";
-
     public static void main(String[] args) {
         //Создать массив с десятичными дробями. - >> createRandomDoubleArray(10);
         //Вывести его на экран. - >> printColorDoubleArray()
@@ -34,7 +32,7 @@ public class HomeWorkDoubleArray {
     }
 
     private static double [] deleteElementDoubleArray(double[] array, int index) {
-        double[] result = new double[array.length - 1]; // ydalit i sozdat new array
+        double[] result = new double[array.length - 1];
         for (int i = 0; i < index; i++) {
             result[i] = array[i];
         }
@@ -42,7 +40,6 @@ public class HomeWorkDoubleArray {
             result[i] = array[i + 1];
         }
         return result;
-
     }
 
     private static double[] addElementDoubleArray(double[] array, int index, double newElement) {
@@ -96,27 +93,27 @@ public class HomeWorkDoubleArray {
 
         int input = (int) var;
         int myModuloTen = input % 10;
-        if (myModuloTen == 1){
+        if (myModuloTen == 0){
             result = ANSI_RED + result;
-        }else if (myModuloTen == 2){
+        }else if (myModuloTen == 1){
             result = ANSI_GREEN + result;
         }
-        else if (myModuloTen == 3){
+        else if (myModuloTen == 2){
             result = ANSI_YELLOW + result;
         }
-        else if (myModuloTen == 4){
+        else if (myModuloTen == 3){
             result = ANSI_BLUE + result;
         }
-        else if (myModuloTen == 5){
+        else if (myModuloTen == 4){
             result = ANSI_PURPLE + result;
         }
-        else if (myModuloTen == 6){
+        else if (myModuloTen == 5){
             result = ANSI_CYAN + result;
         }
         else if (myModuloTen == 6){
             result = ANSI_RESET + result;
         }
-        else if (myModuloTen == 6){
+        else if (myModuloTen == 7){
             result = ANSI_WHITE + result;
         }
         return result;
@@ -143,5 +140,4 @@ public class HomeWorkDoubleArray {
         output = output / 100;
         return output;
     }
-
 }
